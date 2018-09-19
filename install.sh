@@ -9,3 +9,5 @@ echo "----> Installing Vundle plugin"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "----> Installing vim plugins"
 vim +PluginInstall +qall
+rm install.sh
+exit 0
