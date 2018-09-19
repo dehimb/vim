@@ -2,6 +2,7 @@
 echo "----> Removing old vim folder"
 rm -R -f ~/.vim
 mkdir ~/.vim
+mkdir ~/.vim/bundle
 echo "----> Cloning new vim configs"
 git clone https://github.com/dehimb/vim.git ~/.vim
 echo "----> Installing Vundle plugin"
