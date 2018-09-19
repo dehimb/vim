@@ -7,16 +7,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim'
 Plugin 'sjl/gundo.vim'
-Plugin 'tell-k/vim-autopep8'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -114,7 +111,7 @@ set nu
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 "python with virtualenv support
-py << EOF
+py3 << EOF
 import os
 import sys
 if 'VIRTUAL_ENV' in os.environ:
