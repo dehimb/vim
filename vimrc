@@ -82,5 +82,9 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 set clipboard=unnamed
 
+let python_highlight_all=1
+syntax on
+colorscheme meta5 
+
 " transparent bg
 hi Normal guibg=NONE ctermbg=NONE
