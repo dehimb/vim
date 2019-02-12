@@ -12,9 +12,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim'
-Plugin 'sjl/gundo.vim'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
+Plugin 'maksimr/vim-jsbeautify'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -30,26 +28,15 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 map <C-n> :NERDTreeToggle<CR>
-nnoremap <leader>v :e ~/.vimrc<CR>
-nnoremap <leader>V :tabnew ~/.vimrc<CR>
+nnoremap <leader>v :e ~/.vim/vimrc<CR>
+nnoremap <leader>V :tabnew ~/.vim/vimrc<CR>
 nnoremap <leader>a :Ag!<space>
-nnoremap <F4> :GundoToggle<CR>
 nnoremap <leader>n <esc>:tabprevious<CR>
 nnoremap <leader>m <esc>:tabnext<CR>
 
 " close preview window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-" sessions
-let g:session_directory = "~/.vim/session"
-let g:session_autoload = "no"
-let g:session_autosave = "no"
-let g:session_command_aliases = 1
-nnoremap <leader>so :SessionOpen<CR>
-nnoremap <leader>ss :SessionSave<space>
-nnoremap <leader>sd :SessionDelete<CR>
-nnoremap <leader>sc :SessionClose<CR>
 
 " search
 set hlsearch
@@ -81,8 +68,6 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 set clipboard=unnamed
 
-let python_highlight_all=1
-syntax on
 colorscheme meta5 
 
 " transparent bg
