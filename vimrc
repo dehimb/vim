@@ -15,7 +15,6 @@ Plugin 'rking/ag.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
-" Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -88,3 +87,7 @@ colorscheme meta5
 
 " transparent bg
 hi Normal guibg=NONE ctermbg=NONE
+
+" cursor line highlight when enter editing mode
+:autocmd InsertEnter * set cul
+:autocmd InsertLeave * set nocul
