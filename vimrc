@@ -76,3 +76,6 @@ hi Normal guibg=NONE ctermbg=NONE
 " cursor line highlight when enter editing mode
 :autocmd InsertEnter * set cul
 :autocmd InsertLeave * set nocul
+
+" enable syntax highligh
+:syntax on
