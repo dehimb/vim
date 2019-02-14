@@ -22,6 +22,10 @@ set relativenumber
 
 " Map ESC
 inoremap jk <esc>
+
+" paste toggle
+set pastetoggle=<F2>
+
 " navigation 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
