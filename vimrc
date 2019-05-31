@@ -13,6 +13,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'PProvost/vim-ps1'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -37,7 +38,7 @@ nnoremap <leader>V :tabnew ~/.vim/vimrc<CR>
 nnoremap <leader>a :Ag!<space>
 nnoremap <leader>n <esc>:tabprevious<CR>
 nnoremap <leader>m <esc>:tabnext<CR>
-
+map <leader>r :source ~/.vim/vimrc<CR>
 " close preview window
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -72,7 +73,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 set clipboard=unnamed
 
-colorscheme meta5 
+colorscheme monokai 
 
 " transparent bg
 hi Normal guibg=NONE ctermbg=NONE
