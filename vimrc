@@ -72,11 +72,7 @@ set nu
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 set clipboard=unnamed
-
-colorscheme monokai 
-
-" transparent bg
-hi Normal guibg=NONE ctermbg=NONE
+colorscheme meta5 
 
 " cursor line highlight when enter editing mode
 :autocmd InsertEnter * set cul

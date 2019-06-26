@@ -9,9 +9,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-set background=dark
 let colors_name = "meta5"
-
 " Vim >= 7.0 specific colors
 if version >= 700
   hi iCursor      guifg=#000000 guibg=#d0d0d0 ctermfg=0 ctermbg=252
@@ -90,3 +88,5 @@ if has("spell")
    hi spellRare      guifg=#bcbcbc guibg=#1c1c1c ctermfg=250 ctermbg=233
    hi spelllocal     cterm=NONE ctermfg=NONE ctermbg=20 gui=NONE guifg=NONE guibg=#0000df
 endif
+
+hi Normal guibg=NONE ctermbg=NONE
