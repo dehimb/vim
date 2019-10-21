@@ -14,6 +14,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'PProvost/vim-ps1'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
